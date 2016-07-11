@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Find my Pokemon</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      height: 100%;
+    }
+  </style>
+</head>
+  <body>
+
+  <div id="map"></div>
+
+  <%- body %>
+
+  <% if (env.production) { %>
+    <script async src="<%= env.assets.main.js %>"></script>
+  <% } else { %>
+    <script src="http://localhost:3000/client/main.js"></script>
+  <% } %>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkaWPJJjRcvk_D_tazcctfYmP7urHcW2E&libraries=geometry&callback=initMap"
+    async defer></script>
+  </body>
+</html>
