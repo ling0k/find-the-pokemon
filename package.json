@@ -1,5 +1,5 @@
 {
-  "name": "find-my-pokemon",
+  "name": "find-the-pokemon",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ling0k/find-my-pokemon"
+    "url": "https://github.com/ling0k/find-the-pokemon"
   },
   "engines": {
     "node": "5",
