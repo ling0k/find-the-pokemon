@@ -24,12 +24,10 @@ function drawDonut(center, outerRadius, innerRadius) {
        getCirclePoints(center, outerRadius, 1440, true),
        getCirclePoints(center, innerRadius, 1440, false)
      ],
-     strokeColor: "#0000FF",
-     strokeOpacity: 0.8,
-     strokeWeight: 2,
+     strokeWeight: 0,
      fillColor: "#FF0000",
      map: map,
-     fillOpacity: 0.35
+     fillOpacity: 0.20
    });
   return donut;
 }
